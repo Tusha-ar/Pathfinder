@@ -23,19 +23,19 @@ function Grids() {
 
   useEffect(() => {
     Init()
-    function Init() {
-      const tempGrid = []
-      for (let i = 0; i < rows; i++) {
-        const col = []
-        for (let j = 0; j < cols; j++) {
-          col.push(createNode(j, i))
-        }
-        tempGrid.push(col)
-      }
-      setGrid(tempGrid)
-    }
   }, [])
 
+  function Init() {
+    const tempGrid = []
+    for (let i = 0; i < rows; i++) {
+      const col = []
+      for (let j = 0; j < cols; j++) {
+        col.push(createNode(j, i))
+      }
+      tempGrid.push(col)
+    }
+    setGrid(tempGrid)
+  }
 
 
 
